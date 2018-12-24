@@ -632,7 +632,7 @@ diff -rup coreutils-8.25/src/mv.c coreutils-8.25-patched/src/mv.c
  \n\
    -b                           like --backup but does not accept an argument\n\
    -f, --force                  do not prompt before overwriting\n\
-+  -g, --progress-bar           add progress-bar\n\
++  -g, --progress-bar           add a progress bar\n\
    -i, --interactive            prompt before overwrite\n\
    -n, --no-clobber             do not overwrite an existing file\n\
  If you specify more than one of -i, -f, -n, only the final one takes effect.\n\
