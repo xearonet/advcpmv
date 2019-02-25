@@ -24,6 +24,19 @@ patch -p1 -i advcpmv-0.7-8.25.patch
 ./configure
 make
 ```
+You might get the following error, while running “./configure” command.
+
+```
+checking whether mknod can create fifo without root privileges... configure: error: in `/home/tecmint/coreutils-8.21':
+configure: error: you should not run configure as root (set FORCE_UNSAFE_CONFIGURE=1 in environment to bypass this check)
+See `config.log' for more details
+```
+Run the following command on the terminal to fix that error and run the “./configure” command again.
+
+```
+export FORCE_UNSAFE_CONFIGURE=1
+```
+
 ## Usage
 Copy bianries to /bin
 ```
