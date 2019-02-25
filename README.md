@@ -30,7 +30,7 @@ Copy bianries to /bin
 sudo mv ./src/cp /usr/local/bin/gcp
 sudo mv ./src/mv /usr/local/bin/gmv
 ```
-... and add aliases to ~/.bashrc for your convenience
+and add aliases to ~/.bashrc for your convenience
 ```
 echo alias gcp '/usr/local/bin/gcp -g' >> ~/.bashrc
 echo alias gmv '/usr/local/bin/gmv -g' >> ~/.bashrc
