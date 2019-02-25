@@ -19,7 +19,7 @@ version of coreutils.
 wget http://ftp.gnu.org/gnu/coreutils/coreutils-8.25.tar.xz
 tar xvJf coreutils-8.25.tar.xz
 cd coreutils-8.25/
-https://raw.githubusercontent.com/xearonet/advcpmv/master/advcpmv-0.7-8.25.patch
+wget http://raw.githubusercontent.com/xearonet/advcpmv/master/advcpmv-0.7-8.25.patch
 patch -p1 -i advcpmv-0.7-8.25.patch
 ./configure
 make
