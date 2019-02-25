@@ -16,13 +16,25 @@ version of coreutils.
 ## Build instructions
 
 ```
-wget http://ftp.gnu.org/gnu/coreutils/coreutils-8.21.tar.xz
-tar xvJf coreutils-8.21.tar.xz
-cd coreutils-8.21/
-wget https://raw.githubusercontent.com/schollz/advcpmv/master/advcpmv-0.5-8.21.patch
-patch -p1 -i advcpmv-0.5-8.21.patch
+wget http://ftp.gnu.org/gnu/coreutils/coreutils-8.25.tar.xz
+tar xvJf coreutils-8.25.tar.xz
+cd coreutils-8.25/
+wget https://raw.githubusercontent.com/xearonet/advcpmv/master/advcpmv-0.5-8.25.patch
+patch -p1 -i advcpmv-0.5-8.25.patch
 ./configure
 make
-sudo mv ./src/cp /usr/local/bin/cpg
-sudo mv ./src/mv /usr/local/bin/mvg
 ```
+## Usage
+Copy bianries to /bin
+```
+sudo mv ./src/cp /usr/local/bin/gcp
+sudo mv ./src/mv /usr/local/bin/gmv
+```
+... and add aliases to ~/.bashrc for your convenience
+```
+echo alias gcp '/usr/local/bin/gcp -g' >> ~/.bashrc
+echo alias gmv '/usr/local/bin/gmv -g' >> ~/.bashrc
+```
+## Upstream merge
+I sent the patch to the team, that maintains the GNU CoreUtils. They won't merge this patch, because mv and cp are feature complete.
+
